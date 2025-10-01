@@ -29,7 +29,7 @@ public class Main {
         result=calc.sub(a,b);
         System.out.println("Result: "+ result);
 
-        //Creating an instance of Calculator Subtracting
+        //Creating an instance of Calculator Multiplying
 
         System.out.println("Simple Calculator -Multiply two numbers");
         System.out.println("Enter first number: ");
@@ -40,6 +40,15 @@ public class Main {
         result=calc.mul(a,b);
         System.out.println("Result: "+ result);
 
+        //Creating an instance of Calculator Division
 
+        System.out.println("Simple Calculator -Multiply two numbers");
+        System.out.println("Enter first number: ");
+        a=sc.nextInt();
+        System.out.println("Enter a second number: ");
+        b=sc.nextInt();
+
+        float sum=calc.div(a,b);
+        System.out.println("Result: "+ sum);
     }
 }
