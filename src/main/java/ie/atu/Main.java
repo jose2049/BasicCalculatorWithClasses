@@ -8,7 +8,7 @@ public class Main {
 
         //Create an instance of  Calculator
         Calculator calc= new Calculator();
-;
+
         System.out.println("Simple Calculator -Add two numbers");
         System.out.println("Enter first number: ");
         int a=sc.nextInt();
@@ -16,6 +16,17 @@ public class Main {
         int b=sc.nextInt();
 
         int result=calc.add(a,b);
+        System.out.println("Result: "+ result);
+
+        //Creating an instance of Calculator Subtracting
+
+        System.out.println("Simple Calculator -Subtract two numbers");
+        System.out.println("Enter first number: ");
+        a=sc.nextInt();
+        System.out.println("Enter a second number: ");
+        b=sc.nextInt();
+
+        result=calc.sub(a,b);
         System.out.println("Result: "+ result);
     }
 }
