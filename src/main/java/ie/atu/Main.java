@@ -11,7 +11,7 @@ public class Main {
         int b;
         int result;
 
-        System.out.print("Select an operation option: add(+) sub(-) mul(*) div(/): ");
+        System.out.print("Select an operation option: add(+) sub(-) mul(*) div(/) addPower(^) modulo(%): ");
         String operation=sc.nextLine();
 
         switch(operation){
@@ -61,9 +61,26 @@ public class Main {
                 float sum=calc.div(a,b);
                 System.out.println("Result: "+ sum);
                 break;
+            case "^":
+                System.out.println("Enter first number: ");
+                a=sc.nextInt();
+                System.out.println("Enter a second number: ");
+                b=sc.nextInt();
+
+                double product = Calculator.pow(a,b);
+                System.out.println("Result: "+ product);
+                break;
+            case "%":
+                System.out.println("Enter first number: ");
+                a=sc.nextInt();
+                System.out.println("Enter a second number: ");
+                b=sc.nextInt();
+
+                float md=calc.modulo(a,b);
+                System.out.println("Result: "+ md);
+                break;
             default:
                 System.out.println("Wrong input");
         }
-
     }
 }
